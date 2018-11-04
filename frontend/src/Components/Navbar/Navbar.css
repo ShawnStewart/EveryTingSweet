@@ -1,0 +1,66 @@
+.Navbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: white;
+  background-color: blue;
+  /* background-image: linear-gradient(
+    47deg,
+    rgb(239, 202, 106),
+    rgb(230, 161, 120),
+    rgb(191, 115, 149),
+    rgb(153, 145, 194),
+    rgb(152, 178, 219),
+    rgb(132, 193, 195)
+  ); */
+  background-image: linear-gradient(
+    47deg,
+    rgb(135, 27, 96),
+    rgb(203, 38, 99),
+    rgb(236, 95, 103),
+    rgb(248, 182, 100),
+    rgb(249, 216, 123),
+    rgb(248, 240, 167)
+  );
+  background-size: 500% 500%;
+  animation: BackgroundGradient 30s linear infinite;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Navbar-link {
+  color: white;
+  text-decoration: none;
+}
+
+.Navbar-logo {
+  font-size: 2em;
+  margin: 0;
+}
+
+.Navbar-hamburger {
+  cursor: pointer;
+}
+
+.hamburger-bar1,
+.hamburger-bar2,
+.hamburger-bar3 {
+  width: 35px;
+  height: 5px;
+  /* background-color: rgb(38, 38, 38); */
+  background-color: white;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+@keyframes BackgroundGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
