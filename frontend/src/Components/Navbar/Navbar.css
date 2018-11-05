@@ -21,7 +21,7 @@
     rgb(203, 38, 99),
     rgb(236, 95, 103),
     rgb(248, 182, 100),
-    rgb(249, 216, 123) /* rgb(248, 240, 167) */
+    rgb(249, 216, 123)
   );
   background-size: 500% 500%;
   animation: BackgroundGradient 30s linear infinite;
@@ -74,14 +74,65 @@
 
 /* Mobile Menu */
 .Navbar-mobile-menu {
-  height: 100%;
+  height: 100vh;
   width: 0;
+  padding: 12px 0;
   position: fixed;
   z-index: 1;
   overflow-x: hidden;
-  background-color: #333;
+  /* background-color: #333; */
+  background-image: linear-gradient(
+    133deg,
+    /* rgb(203, 38, 99),
+    rgb(236, 95, 103),
+    rgb(248, 182, 100) */ #333333,
+    #ddd
+  );
   color: white;
   transition: 0.4s;
+}
+
+.Navbar-mobile-menu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.Navbar-mobile-menu ul li {
+}
+
+.Navbar-mobile-menu-active {
+  background-color: #333;
+}
+
+.Navbar-mobile-menu-active .Navbar-mobile-menu-link {
+  color: white;
+}
+
+.Navbar-mobile-menu-link {
+  box-sizing: border-box;
+  padding: 10px 20px;
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+  color: #ccc;
+  font-size: 1.5em;
+  position: relative;
+  text-transform: uppercase;
+}
+
+/* .Navbar-mobile-menu-link:hover::before {
+  content: "";
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  top: 100%;
+  margin: 0 auto;
+  background-color: white;
+} */
+
+.Navbar-mobile-menu .active {
+  color: white;
 }
 
 /* Gradient Transition */

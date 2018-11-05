@@ -28,10 +28,86 @@ export default class Navbar extends Component {
     this.setState({ showMobileMenu: !this.state.showMobileMenu });
   };
 
+  handleMenuClick = item => {
+    this.setState({ activeMenuItem: item });
+    this.toggleMobileMenu();
+  };
+
   render() {
     return (
       <div>
-        <div className="Navbar-mobile-menu">Hey</div>
+        <div className="Navbar-mobile-menu">
+          <ul>
+            <li
+              className={
+                this.state.activeMenuItem === "About"
+                  ? "Navbar-mobile-menu-active"
+                  : ""
+              }
+            >
+              <a
+                href="localhost:3000"
+                className="Navbar-mobile-menu-link"
+                onClick={() => {
+                  this.handleMenuClick("About");
+                }}
+              >
+                About
+              </a>
+            </li>
+            <li
+              className={
+                this.state.activeMenuItem === "Menu"
+                  ? "Navbar-mobile-menu-active"
+                  : ""
+              }
+            >
+              <a
+                href="localhost:3000"
+                className="Navbar-mobile-menu-link"
+                onClick={() => {
+                  this.handleMenuClick("Menu");
+                }}
+              >
+                Menu
+              </a>
+            </li>
+            <li
+              className={
+                this.state.activeMenuItem === "Catering"
+                  ? "Navbar-mobile-menu-active"
+                  : ""
+              }
+            >
+              <a
+                href="localhost:3000"
+                className="Navbar-mobile-menu-link"
+                onClick={() => {
+                  this.handleMenuClick("Catering");
+                }}
+              >
+                Catering
+              </a>
+            </li>
+            <li
+              className={
+                this.state.activeMenuItem === "Contact"
+                  ? "Navbar-mobile-menu-active"
+                  : ""
+              }
+            >
+              <a
+                href="localhost:3000"
+                className="Navbar-mobile-menu-link"
+                onClick={() => {
+                  this.handleMenuClick("Contact");
+                }}
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
         <nav className="Navbar ets-container">
           <span
             className={
@@ -44,7 +120,14 @@ export default class Navbar extends Component {
             <div className="hamburger-bar2" />
             <div className="hamburger-bar3" />
           </span>
-          <a href="localhost:3000" className="Navbar-link">
+          <a
+            href="localhost:3000"
+            className="Navbar-link"
+            onClick={() => {
+              this.setState({ activeMenuItem: "" });
+              if (this.state.showMobileMenu) this.toggleMobileMenu();
+            }}
+          >
             <h1 className="Navbar-logo">Every Ting Sweet</h1>
           </a>
         </nav>
