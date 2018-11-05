@@ -1,5 +1,6 @@
 .App-body {
   padding-top: 73px;
+  transition: margin-left 0.4s;
 }
 
 .ets-container {

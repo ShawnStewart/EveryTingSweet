@@ -28,6 +28,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: margin-left 0.4s;
 }
 
 .Navbar-link {
@@ -40,12 +41,12 @@
   margin: 0;
 }
 
+/* Hamburger styling */
 .Navbar-hamburger {
   cursor: pointer;
   position: absolute;
   left: 20px;
 }
-
 .hamburger-bar1,
 .hamburger-bar2,
 .hamburger-bar3 {
@@ -57,23 +58,33 @@
   transition: 0.4s;
 }
 
+/* Hamburger transition */
 .Navbar-hamburger-open {
   transform: rotate(180deg);
 }
-
 .Navbar-hamburger-open .hamburger-bar1 {
   transform: rotate(45deg) translate(6px, 7px);
-  /* background-color: wheat; */
 }
-
 .Navbar-hamburger-open .hamburger-bar2 {
   opacity: 0;
 }
-
 .Navbar-hamburger-open .hamburger-bar3 {
   transform: rotate(-45deg) translate(6px, -6px);
 }
 
+/* Mobile Menu */
+.Navbar-mobile-menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  overflow-x: hidden;
+  background-color: #333;
+  color: white;
+  transition: 0.4s;
+}
+
+/* Gradient Transition */
 @keyframes BackgroundGradient {
   0% {
     background-position: 0% 50%;
