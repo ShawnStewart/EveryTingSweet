@@ -1,6 +1,9 @@
 .Navbar {
+  box-sizing: border-box;
   padding-top: 15px;
   padding-bottom: 15px;
+  position: fixed;
+  width: 100%;
   color: white;
   background-color: blue;
   /* background-image: linear-gradient(
@@ -18,8 +21,7 @@
     rgb(203, 38, 99),
     rgb(236, 95, 103),
     rgb(248, 182, 100),
-    rgb(249, 216, 123),
-    rgb(248, 240, 167)
+    rgb(249, 216, 123) /* rgb(248, 240, 167) */
   );
   background-size: 500% 500%;
   animation: BackgroundGradient 30s linear infinite;

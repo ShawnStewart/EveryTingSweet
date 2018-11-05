@@ -1,0 +1,77 @@
+.Landing {
+  background-color: white;
+  height: 3000px;
+}
+
+.Landing-CTA {
+  height: 750px;
+  width: auto;
+  background-image: url("../../Img/Cupcakes.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Landing-CTA-button {
+  margin: 0 20px;
+  padding: 20px;
+  height: 75px;
+  width: 250px;
+  color: white;
+  font-size: 2em;
+  border: none;
+  background-image: linear-gradient(
+    47deg,
+    rgb(203, 38, 99),
+    rgb(236, 95, 103),
+    rgb(248, 182, 100)
+  );
+  background-size: 500% 500%;
+  transition: 1s;
+}
+
+.Landing-CTA-button:hover {
+  animation: BackgroundGradient 5s linear infinite;
+}
+
+/* .About {
+  background-image: linear-gradient(
+    47deg,
+    rgb(203, 38, 99),
+    rgb(236, 95, 103),
+    rgb(248, 182, 100)
+  );
+  background-size: 500% 500%;
+  transition: 1s;
+}
+
+.About:hover {
+  animation: BackgroundGradient 5s linear infinite;
+}
+
+.Order {
+  background-image: linear-gradient(
+    47deg,
+    rgb(135, 27, 96),
+    rgb(203, 38, 99),
+    rgb(236, 95, 103),
+    rgb(248, 182, 100),
+    rgb(249, 216, 123)
+  );
+  background-size: 500% 500%;
+} */
+
+@keyframes BackgroundGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
