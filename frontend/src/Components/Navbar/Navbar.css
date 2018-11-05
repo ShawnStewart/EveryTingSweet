@@ -5,7 +5,7 @@
   position: fixed;
   width: 100%;
   color: white;
-  background-color: blue;
+  background-color: rgb(203, 38, 99);
   /* background-image: linear-gradient(
     47deg,
     rgb(239, 202, 106),
@@ -26,7 +26,7 @@
   background-size: 500% 500%;
   animation: BackgroundGradient 30s linear infinite;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -42,6 +42,8 @@
 
 .Navbar-hamburger {
   cursor: pointer;
+  position: absolute;
+  left: 20px;
 }
 
 .hamburger-bar1,

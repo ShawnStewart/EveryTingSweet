@@ -5,3 +5,7 @@
 .ets-container {
   padding: 0 20px;
 }
+
+button:focus {
+  outline: 0;
+}

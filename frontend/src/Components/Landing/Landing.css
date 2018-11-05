@@ -21,38 +21,10 @@
   height: 75px;
   width: 250px;
   color: white;
-  font-size: 2em;
+  font-size: 1.8em;
   border: none;
-  background-image: linear-gradient(
-    47deg,
-    rgb(203, 38, 99),
-    rgb(236, 95, 103),
-    rgb(248, 182, 100)
-  );
-  background-size: 500% 500%;
-  transition: 1s;
-}
-
-.Landing-CTA-button:hover {
-  animation: BackgroundGradient 5s linear infinite;
-}
-
-/* .About {
-  background-image: linear-gradient(
-    47deg,
-    rgb(203, 38, 99),
-    rgb(236, 95, 103),
-    rgb(248, 182, 100)
-  );
-  background-size: 500% 500%;
-  transition: 1s;
-}
-
-.About:hover {
-  animation: BackgroundGradient 5s linear infinite;
-}
-
-.Order {
+  border-radius: 10px;
+  background-color: rgb(203, 38, 99);
   background-image: linear-gradient(
     47deg,
     rgb(135, 27, 96),
@@ -62,7 +34,19 @@
     rgb(249, 216, 123)
   );
   background-size: 500% 500%;
-} */
+  animation: BackgroundGradient 30s linear infinite;
+  box-shadow: 2px 5px rgba(1, 1, 1, 0.8);
+}
+
+.Landing-CTA-button:hover {
+  transform: translateX(1px) translateY(2px);
+  box-shadow: 1px 3px rgba(1, 1, 1, 0.8);
+}
+
+.Landing-CTA-button:active {
+  transform: translateX(1px) translateY(4px);
+  box-shadow: 1px 1px rgba(1, 1, 1, 0.8);
+}
 
 @keyframes BackgroundGradient {
   0% {
