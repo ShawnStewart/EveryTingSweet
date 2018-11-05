@@ -36,7 +36,7 @@
 }
 
 .Navbar-logo {
-  font-size: 2em;
+  font-size: 1.6em;
   margin: 0;
 }
 
@@ -49,12 +49,29 @@
 .hamburger-bar1,
 .hamburger-bar2,
 .hamburger-bar3 {
-  width: 35px;
-  height: 5px;
-  /* background-color: rgb(38, 38, 38); */
+  width: 32px;
+  height: 4px;
+  border-radius: 5px;
   background-color: white;
   margin: 5px 0;
   transition: 0.4s;
+}
+
+.Navbar-hamburger-open {
+  transform: rotate(180deg);
+}
+
+.Navbar-hamburger-open .hamburger-bar1 {
+  transform: rotate(45deg) translate(6px, 7px);
+  /* background-color: wheat; */
+}
+
+.Navbar-hamburger-open .hamburger-bar2 {
+  opacity: 0;
+}
+
+.Navbar-hamburger-open .hamburger-bar3 {
+  transform: rotate(-45deg) translate(6px, -6px);
 }
 
 @keyframes BackgroundGradient {

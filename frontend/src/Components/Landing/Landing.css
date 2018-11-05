@@ -17,11 +17,9 @@
 
 .Landing-CTA-button {
   margin: 0 20px;
-  padding: 20px;
-  height: 75px;
-  width: 250px;
+  padding: 15px 50px;
   color: white;
-  font-size: 1.8em;
+  font-size: 1.6em;
   border: none;
   border-radius: 10px;
   background-color: rgb(203, 38, 99);
@@ -35,17 +33,17 @@
   );
   background-size: 500% 500%;
   animation: BackgroundGradient 30s linear infinite;
-  box-shadow: 2px 5px rgba(1, 1, 1, 0.8);
+  box-shadow: 0 6px rgba(1, 1, 1, 0.8);
 }
 
 .Landing-CTA-button:hover {
-  transform: translateX(1px) translateY(2px);
-  box-shadow: 1px 3px rgba(1, 1, 1, 0.8);
+  transform: translateY(2px);
+  box-shadow: 0 4px rgba(1, 1, 1, 0.8);
 }
 
 .Landing-CTA-button:active {
-  transform: translateX(1px) translateY(4px);
-  box-shadow: 1px 1px rgba(1, 1, 1, 0.8);
+  transform: translateY(6px);
+  box-shadow: none;
 }
 
 @keyframes BackgroundGradient {
